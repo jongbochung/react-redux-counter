@@ -1,27 +1,23 @@
-import Counter from '../components/Counter';
+import CounterList from '../components/CounterList';
 import * as actions from '../actions';
 import { connect } from 'react-redux';
 import { getRandomColor, getRandomRadius } from '../utils';
 
 const mapStateToProps = (state) => ({
-    color: state.styleData.get('color'),
-    radius: state.styleData.get('radius'),
-    number: state.numberData.get('number')
+    counters: state.get('counters')
 });
-
 
 const mapDispatchToProps = (dispatch) => ({
-    onIncrement: () => dispatch(actions.increment()),
-    onDecrement: () => dispatch(actions.decrement()),
-    onChangeStyle: () => {
+    onIncrement: (index) => dispatch(actions.increment(index)),
+    onDecrement: (index) => dispatch(actions.decrement(index)),
+    onChangeStyle: (index) => {
         const color = getRandomColor();
         const radius = getRandomRadius();
-        dispatch(actions.setStyle(color, radius));
+        dispatch(actions.setStyle( index, color, radius));
     }
-});
-
+})
 
 export default connect(
     mapStateToProps,
     mapDispatchToProps
-)(Counter);
+)(CounterList);

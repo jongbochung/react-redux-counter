@@ -1,21 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Counter.css';
+import '../css/Counter.css';
 
-const Counter = ({number, color, radius, onIncrement, onDecrement, onChangeStyle}) => {
+const Counter = ({number, color, radius, index, onIncrement, onDecrement, onChangeStyle}) => {
   console.log(radius);
-
+  console.log(typeof radius);
     return (
         <div
             className="Counter"
-            onClick={onIncrement}
+            onClick={() => onIncrement(index)}
             onContextMenu={
                 (e) => {
                     e.preventDefault();
-                    onDecrement();
+                    onDecrement(index);
                 }
             }
-            onDoubleClick={onChangeStyle}
+            onDoubleClick={() => onChangeStyle(index)}
             style={{backgroundColor: color, borderRadius: radius}}>
                 {number}
         </div>
