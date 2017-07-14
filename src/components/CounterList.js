@@ -5,7 +5,6 @@ import { List } from 'immutable';
 import '../css/CounterList.css';
 
 const CounterList = ({counters, onIncrement, onDecrement, onChangeStyle}) => {
-console.log("dd");
     const counterList = counters.map(
         (counter, i) => (
             <Counter

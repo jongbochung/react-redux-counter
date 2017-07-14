@@ -6,7 +6,7 @@ const initialState = Map({
         Map({
             color: 'black',
             number: 0,
-            radius: '100'
+            radius: 100
         })
     ])
 })
@@ -43,9 +43,9 @@ function counter(state = initialState, action) {
                 (counter) => counter.set('color', action.color)
                                     .set('radius', action.radius)
             ));
+
         default:
             return state;
-
     };
 }
 
