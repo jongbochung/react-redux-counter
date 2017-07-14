@@ -6,10 +6,10 @@ Redux is a predictable state container for JavaScript apps.
 
 Take a look [here](http://smooth-meeting.surge.sh/) to find out what it looks like.
 ```
-Create or remove counters with buttons.
-Right Click on a counter increases by one.
-Left Click  on a counter decreases by one.
-Doubl Click  on a counter changes color and radius.
+1. Create or remove counters with buttons.
+2. Right Click on a counter increases by one.
+3. Left Click  on a counter decreases by one.
+4. Doubl Click  on a counter changes color and radius.
 ```
 ## Libraries and tools
 * create-react-app
@@ -17,6 +17,13 @@ Doubl Click  on a counter changes color and radius.
 * react-redux
 * immutable.js
 * surge.sh
+
+## branch
+
+single-counter branch: http://sticky-office.surge.sh
+
+master and multiple-counter  branch: http://smooth-meeting.surge.sh
+
 
 ## installation
 All you need to do is clone or download this repository
