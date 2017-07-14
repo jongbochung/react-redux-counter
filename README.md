@@ -4,7 +4,7 @@ Redux is a predictable state container for JavaScript apps.
 
 ## What is it?
 
-Take a look [here](http://smooth-meeting.surge.sh/) to find out what it looks like.
+Take a look [here](http://numberless-battle.surge.sh) to find out what it looks like.
 ```
 1. Create or remove counters with buttons.
 2. Right Click on a counter increases by one.
