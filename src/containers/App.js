@@ -24,7 +24,6 @@ const mapToDispatch = (dispatch) => ({
     onCreate: () => {
       const color = getRandomColor();
       const radius = getRandomRadius();
-      console.log("create radius : " + radius);
       dispatch(actions.create(color, radius));
     },
     onRemove: () => dispatch(actions.remove())

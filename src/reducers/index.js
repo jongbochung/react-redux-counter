@@ -6,7 +6,7 @@ const initialState = Map({
         Map({
             color: 'black',
             number: 0,
-            radius: '100'
+            radius: 100
         })
     ])
 })
