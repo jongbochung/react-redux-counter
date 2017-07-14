@@ -3,11 +3,10 @@ import { Map } from 'immutable';
 
 const initialState = Map({
   color: 'black',
-  radius: '100'
+  radius: 100
 });
 
 const color = (state = initialState, action) => {
-  console.log(" action.radius: " +  action.radius);
     switch(action.type) {
         case types.SET_STYLE:
             var newState =  state.set('color', action.color)

@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import './Counter.css';
 
 const Counter = ({number, color, radius, onIncrement, onDecrement, onChangeStyle}) => {
-  console.log(radius);
 
     return (
         <div
@@ -25,7 +24,7 @@ const Counter = ({number, color, radius, onIncrement, onDecrement, onChangeStyle
 Counter.propTypes = {
     number: PropTypes.number,
     color: PropTypes.string,
-    radius: PropTypes.string,
+    radius: PropTypes.number,
     onIncrement: PropTypes.func,
     onDecrement: PropTypes.func,
     onChangeStyle: PropTypes.func
