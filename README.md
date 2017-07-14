@@ -4,11 +4,11 @@ Redux is a predictable state container for JavaScript apps.
 
 ## What is it?
 
-Take a look [here](sticky-office.surge.sh) to find out what it looks like.
+Take a look [here](http://www.sticky-office.surge.sh) to find out what it looks like.
 ```
-Right Click increases by one.
-Left Click decreases by one.
-Doubl Click changes color and radius.
+* Right Click increases by one.
+* Left Click decreases by one.
+* Doubl Click changes color and radius.
 ```
 
 ## installation
@@ -36,4 +36,4 @@ This is also watching for changes, so when you update some code, you don’t hav
 Simple, single-command web publishing. Publish HTML, CSS, and JS for free, without leaving the command line.
 
   * Don't forge to install Surge `npm i surge -g`
-  * Check out more detail [here](surge.sh)
+  * Check out more detail [here](https://surge.sh)
