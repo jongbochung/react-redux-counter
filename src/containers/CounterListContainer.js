@@ -1,5 +1,5 @@
 import CounterList from '../components/CounterList';
-import * as actions from '../actions';
+import * as actions from '../modules';
 import { connect } from 'react-redux';
 import { getRandomColor, getRandomRadius } from '../utils';
 
@@ -13,7 +13,7 @@ const mapDispatchToProps = (dispatch) => ({
     onChangeStyle: (index) => {
         const color = getRandomColor();
         const radius = getRandomRadius();
-        dispatch(actions.setStyle( index, color, radius));
+        dispatch(actions.setStyle({index, color, radius}));
     }
 })
 
