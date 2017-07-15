@@ -20,10 +20,11 @@ Take a look [here](http://numberless-battle.surge.sh) to find out what it looks 
 
 ## branch
 
-single-counter branch: http://sticky-office.surge.sh
+* single-counter branch: http://sticky-office.surge.sh
 
-master and multiple-counter  branch: http://smooth-meeting.surge.sh
+* multiple-counter  branch: http://smooth-meeting.surge.sh
 
+* Ducks/redux-actions branch: It is developed with [Ducks](https://github.com/erikras/ducks-modular-redux/) and [redux-actions](https://www.npmjs.com/package/redux-actions) based on a multiple-counter branch. It works just same as multiple-counter app.
 
 ## installation
 All you need to do is clone or download this repository
