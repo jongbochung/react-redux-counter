@@ -32,7 +32,7 @@ Counter.propTypes = {
 Counter.defaultProps = {
     number: 0,
     color: 'black',
-    radius: '100',
+    radius: 100,
     onIncrement: () => console.warn('onIncrement not defined'),
     onDecrement: () => console.warn('onDecrement not defined'),
     onChangeStyle: () => console.warn('onChangeStyle not defined')

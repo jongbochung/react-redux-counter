@@ -1,7 +1,3 @@
-# <a href='http://redux.js.org'><img src='https://camo.githubusercontent.com/f28b5bc7822f1b7bb28a96d8d09e7d79169248fc/687474703a2f2f692e696d6775722e636f6d2f4a65567164514d2e706e67' height='60'></a>
-
-Redux is a predictable state container for JavaScript apps.  
-
 ## What is it?
 
 Take a look [here](http://numberless-battle.surge.sh) to find out what it looks like.
@@ -12,17 +8,21 @@ Take a look [here](http://numberless-battle.surge.sh) to find out what it looks 
 4. Doubl Click  on a counter changes color and radius.
 ```
 ## Libraries and tools
+* Ducks
+* redux-actions
 * create-react-app
 * redux
 * react-redux
 * immutable.js
 * surge.sh
 
-## branch
+## Ducks
 
-single-counter branch: http://sticky-office.surge.sh
+Helper function to create Redux modules using the [ducks-modular-redux](https://github.com/erikras/ducks-modular-redux/) proposal.
 
-master and multiple-counter  branch: http://smooth-meeting.surge.sh
+## redux-actions
+
+https://www.npmjs.com/package/redux-actions
 
 
 ## installation

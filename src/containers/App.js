@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Buttons from '../components/Buttons';
 import CounterListContainer from './CounterListContainer';
 import { connect } from 'react-redux';
-import * as actions from '../actions';
+import * as actions from '../modules';
 import { getRandomColor, getRandomRadius } from '../utils';
 
 class App extends Component {
@@ -24,7 +24,7 @@ const mapToDispatch = (dispatch) => ({
     onCreate: () => {
       const color = getRandomColor();
       const radius = getRandomRadius();
-      dispatch(actions.create(color, radius));
+      dispatch(actions.create({color, radius}));
     },
     onRemove: () => dispatch(actions.remove())
 
